@@ -17,4 +17,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+// app.import({test: ['vendor/jquery-mockjax/jquery.mockjax.js', '/api-stubs/fixtures.js']});
+// app.import({development: ['vendor/jquery-mockjax/jquery.mockjax.js', '/api-stubs/fixtures.js']});
+app.import({development: 'vendor/jquery-mockjax/jquery.mockjax.js'});
+app.import({development:  'api-stubs/fixtures.js'});
 module.exports = app.toTree();
